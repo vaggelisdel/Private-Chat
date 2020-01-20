@@ -1,0 +1,45 @@
+<div id="enterUsername" class="container">
+    <div class="form-group">
+        <input type="text" id="username" class="form-control" placeholder="ENTER USERNAME">
+        <br>
+        <a href="" id="enterChat" class="btn btn-primary">Enter chat</a>
+    </div>
+</div>
+
+<div id="chatMain" class="container hidden">
+
+    <h1 class="display-4">MessageModel</h1>
+
+    <div id="mainInner" class="row">
+        <div id="chatWindows" class="col-9">
+            <div id="mainScreen" class="chatroom active">MAIN SCREEN</div>
+        </div>
+        <div id="userList" class="col-3">
+            <ul></ul>
+        </div>
+    </div>
+
+    <div id="rooms" class="row">
+
+    </div>
+
+    <div class="row">
+        <br>
+        <br>
+        <div class="">
+            <textarea name="" id="chatText" cols="30" rows="10" class="form-control hidden"
+                      placeholder="Enter chat message"></textarea>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.js"></script>
+<script src="/javascripts/client.js"></script>
+<script>
+    $(function () {
+        $("input#username").focus();
+    });
+</script>
